@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Wells Fargo Social Media Analytics Competition by ZDiamond</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Wells Fargo Social Media Analytics Competition</h1>
-      <h2 class="project-tagline">Zach Diamond</h2>
-      <a href="https://github.com/ZDiamond/wells-fargo-analytics-competition" class="btn">View on GitHub</a>
-      <a href="https://github.com/ZDiamond/wells-fargo-analytics-competition/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/ZDiamond/wells-fargo-analytics-competition/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h1>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Wells Fargo Social Media Analytics Competition by ZDiamond</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Wells Fargo Social Media Analytics Competition</h1>
+        <h2>Zach Diamond</h2>
+        <a href="https://github.com/ZDiamond/wells-fargo-analytics-competition" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="wells-fargo-analytics-competition" class="anchor" href="#wells-fargo-analytics-competition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wells Fargo Analytics Competition</h1>
 
 <h2>
@@ -40,7 +49,7 @@
 
 <p>Before cleaning, data looked at follows:</p>
 
-
+<p><img src="http://i.imgur.com/BLop2Jk.png" alt=""></p>
 
 <p><code>To preprocess data we used code:</code></p>
 
@@ -184,25 +193,41 @@ Bank D: 50</p>
 <p>Average sentiment scores were determined using:
 Y axis: average of score (= sum(pos.matches) - sum(neg.matches)) of each social media post in data frame (ex. df.bankA)</p>
 
+<p><img src="http://i.imgur.com/9ADeiCy.png" alt=""></p>
+
 <h3>
 <a id="word-clusters" class="anchor" href="#word-clusters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Word Clusters</h3>
 
 <p>All banks’ word cluster:</p>
 
+<p><img src="http://i.imgur.com/sDbHWfp.png" alt=""></p>
+
 <p>Bank A word cluster:</p>
+
+<p><img src="http://i.imgur.com/KckF1iR.png" alt=""></p>
 
 <p>Banks B word cluster:</p>
 
+<p><img src="http://i.imgur.com/Rf2cg2K.png" alt=""></p>
+
 <p>Bank C word cluster:</p>
 
+<p><img src="http://i.imgur.com/XK771DF.png" alt=""></p>
+
 <p>Bank D word cluster:</p>
+
+<p><img src="http://i.imgur.com/JdwacjO.png" alt=""></p>
 
 <p>For a word to appear in the word cluster, it must have appeared at least 50 times in posts. Looking at these words clusters, we can deduce information about how customers feel about banks as a whole and how individual banks differ in customer service. Every bank, with the exception of Bank D, exhibited words “phone” and “call,” showing that customer service is a vital part of a bank’s overall reception. While one might assume that financial competence is the key proponent of a bank’s overall success, these word clusters stress that customer service is just as important. Providing poor service to customers or potential customers on the phone, could be extremely detrimental. While sacrificing the quality of employees who work phones may seem like a simple way to cut costs, banks should keep in mind that phone conversations are an integral part of customer service and it may be advantageous to spend more money on properly trained individuals. 
 Comparing bank word clusters, Bank D stood out from the rest, exhibiting word that actually involve finance. Bank D’s data was comprised of financial terms such as “financial management”, “grants”, and “advisers.” For some reason, Bank D inspires more specific topics. Looking at verbs, Bank D exhibited active verbs such as “swing,” “apply,” and “program.” Other banks showed less informative verbs such as “like” and “can.” Evidently, Bank D prompts more meticulous posts. Perhaps they have some sort of reward system for customer reviews, or merely encourage reviews after an issue has been resolved. Another possibility is that Bank D has no customer service issues; therefore, people only Tweet about their finances. Either way, other banks should look at Bank D’s procedure if they are in need of more informative social media reviews. Interestingly, Bank D had the lowest global sentiment score. This could be because the posts were less emotional and more direct.
 Combining sentiment scores with word clusters, we can look at word clusters for each bank for both positive sentiment scores and lower sentiment scores. This enables us to distinguish which words are being used after a positive experience and after a negative experience, thus being able to determine where the bank is excelling and where it needs improvement. Overall positive and negative word clusters for all the banks were as follows:
 Positive:</p>
 
+<p><img src="http://i.imgur.com/TUqYkXf.png" alt=""></p>
+
 <p>Negative:</p>
+
+<p><img src="http://i.imgur.com/y5vJML1.png" alt=""></p>
 
 <p>Asides from expletives, shared terms, and general positive words, we can distinguish what terms people use in different contexts. In positive posts, people use words “support,” “work,” and “business,” showing that completed transactions result in positive experiences. Negative posts, on the other hand, exhibit words “money,” “pay,” and “card.” People may post negatively when they are required to spend extra money or need to request/cancel cards.</p>
 
@@ -211,7 +236,11 @@ Positive:</p>
 
 <p>Positive:</p>
 
+<p><img src="http://i.imgur.com/CPJG0F8.png" alt=""></p>
+
 <p>Negative:</p>
+
+<p><img src="http://i.imgur.com/8x5xLIT.png" alt=""></p>
 
 <p>Evidently, Bank A has problems with customer service as its negative word cluster shows both “customer” and “service.” Showing words “scam” and “fraud,” Bank A clearly has issues gaining the trust of its customers.</p>
 
@@ -220,7 +249,11 @@ Positive:</p>
 
 <p>Positive:</p>
 
+<p><img src="http://i.imgur.com/LLca83v.png" alt=""></p>
+
 <p>Negative:</p>
+
+<p><img src="http://i.imgur.com/lbzq3mL.png" alt=""></p>
 
 <p>Similar to Bank A, Bank B also showed “support” in the positive word cloud, and “card” in the negative. However, customer service was not included in the negative. Bank B most likely has organizational issues showing “people,” and “rebank,” rather than customer service issues.</p>
 
@@ -229,7 +262,11 @@ Positive:</p>
 
 <p>Positive:</p>
 
+<p><img src="http://i.imgur.com/JPADsWg.png" alt=""></p>
+
 <p>Negative:</p>
+
+<p><img src="http://i.imgur.com/Vj2gd5f.png" alt=""></p>
 
 <p>Bank C has clear issues with their card services as “card” was the most common word. Additionally, Bank C has “time” in its negative word cluster. The speed of service may be an issue for this bank.</p>
 
@@ -238,19 +275,33 @@ Positive:</p>
 
 <p>Positive:</p>
 
+<p><img src="http://i.imgur.com/iwMByli.png" alt=""></p>
+
 <p>Negative:</p>
+
+<p><img src="http://i.imgur.com/oqEvCBf.png" alt=""></p>
 
 <p>Similar to Bank B, Bank D does not have customer service issues. However, showing words like “money,” “card,” and “fraud,” Bank D may have trust and organizational issues.</p>
 
 <p>This competition gave me experience in business consulting via data analysis. By manipulating words posted on Twitter and Facebook, I could come to conclusions for how the bank operates and where it needs improvement.</p>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/ZDiamond/wells-fargo-analytics-competition">Wells Fargo Social Media Analytics Competition</a> is maintained by <a href="https://github.com/ZDiamond">ZDiamond</a>.</span>
+        <aside id="sidebar">
+          <a href="https://github.com/ZDiamond/wells-fargo-analytics-competition/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ZDiamond/wells-fargo-analytics-competition/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+          <p class="repo-owner"><a href="https://github.com/ZDiamond/wells-fargo-analytics-competition"></a> is maintained by <a href="https://github.com/ZDiamond">ZDiamond</a>.</p>
 
-    </section>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
   
   </body>
